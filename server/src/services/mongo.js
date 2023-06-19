@@ -20,5 +20,6 @@ async function mongoDisconnect (){
 }
 
 module.exports = {
-  mongoConnect
+  mongoConnect,
+  mongoDisconnect
 };
