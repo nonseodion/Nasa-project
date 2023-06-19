@@ -8,7 +8,7 @@ jobs:
   build: 
     env:
       CI: true
-      MONGO_URL: mongo://localhost
+      MONGO_URL: mongodb://localhost
     runs-on: ubuntu-latest
     strategy:
       matrix: 
