@@ -7,12 +7,12 @@ const app = require("../../app");
 describe("Launch Tests", () => {
   beforeAll(async () => {
     await mongoConnect();
-    // await loadPlanets;
-  });
+    await loadPlanets;
+  }, 100000);
 
   afterAll(async () => {
     await mongoDisconnect();
-  }, 100000);
+  });
 
   describe("Test GET /launches", () => {
     test("It should pass with 200 status", async () => {
