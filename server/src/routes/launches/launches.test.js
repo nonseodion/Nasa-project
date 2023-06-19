@@ -1,6 +1,6 @@
 const request = require("supertest");
 const { mongoConnect } = require("../../services/mongo");
-const { loadPlanets } = require("./models/planets.model");
+const { loadPlanets } = require("../../models/planets.model");
  
 const app = require("../../app");
 
